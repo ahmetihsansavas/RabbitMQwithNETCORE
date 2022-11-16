@@ -1,0 +1,16 @@
+﻿@model RabbitMQMvc.Models.MessageModel
+<form asp-controller="Message" asp-action="CreateMessage">
+    <div class="form-control">
+        <textarea rows="2" cols="40" asp-for="@Model.Data" name="Data" required>Mesaj</textarea>
+    </div>
+    <div class="form-control">
+        <button class="btn btn-primary" type="submit">Gönder</button>
+    </div>
+</form>
+
+<div>
+    @foreach (var item in Model.MessageList)
+    {
+        <p>@item</p>
+    }
+</div>

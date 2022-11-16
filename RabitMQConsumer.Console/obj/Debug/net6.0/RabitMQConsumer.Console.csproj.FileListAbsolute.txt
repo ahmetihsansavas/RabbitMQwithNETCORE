@@ -1,0 +1,17 @@
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\bin\Debug\net6.0\RabitMQConsumer.Console.exe
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\bin\Debug\net6.0\RabitMQConsumer.Console.deps.json
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\bin\Debug\net6.0\RabitMQConsumer.Console.runtimeconfig.json
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\bin\Debug\net6.0\RabitMQConsumer.Console.dll
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\bin\Debug\net6.0\RabitMQConsumer.Console.pdb
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.csproj.AssemblyReference.cache
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.AssemblyInfoInputs.cache
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.AssemblyInfo.cs
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.csproj.CoreCompileInputs.cache
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.csproj.CopyComplete
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.dll
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\refint\RabitMQConsumer.Console.dll
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.pdb
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\RabitMQConsumer.Console.genruntimeconfig.cache
+C:\Users\ahsavas\source\repos\RabbitMQMessage\RabitMQConsumer.Console\obj\Debug\net6.0\ref\RabitMQConsumer.Console.dll
