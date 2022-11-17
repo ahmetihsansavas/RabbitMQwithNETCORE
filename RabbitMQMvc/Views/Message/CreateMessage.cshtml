@@ -1,16 +1,44 @@
 ﻿@model RabbitMQMvc.Models.MessageModel
-<form asp-controller="Message" asp-action="CreateMessage">
-    <div class="form-control">
-        <textarea rows="2" cols="40" asp-for="@Model.Data" name="Data" required>Mesaj</textarea>
-    </div>
-    <div class="form-control">
-        <button class="btn btn-primary" type="submit">Gönder</button>
-    </div>
-</form>
 
-<div>
+@*<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            User..........<input type="text" id="userInput" />
+            <br />
+            Message...<input type="text" id="messageInput" />
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+  
+</div>*@
+    <input id="userInput" value="@Model.CurrentUser" hidden />
+    <div class="form-control">
+    <textarea rows="2" cols="40" id="messageInput" name="Data" required></textarea>
+    </div>
+    <div class="form-control">
+    <button class="btn btn-primary" id="sendButton">Gönder</button>
+    </div>
+
+@*<div>
     @foreach (var item in Model.MessageList)
     {
         <p>@item</p>
     }
+</div>*@
+<div class="row">
+    <div class="col-6">&nbsp;</div>
+    <div class="col-6">
+        <ul id="messagesList"></ul>
+    </div>
 </div>
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>

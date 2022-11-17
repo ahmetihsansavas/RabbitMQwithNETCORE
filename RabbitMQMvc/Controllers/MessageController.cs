@@ -7,6 +7,9 @@ using RabitMqMessageAPI.Services;
 using RabitMQMvc.Entity;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.AspNetCore.SignalR.Client;
+using RabitMqMessageAPI.RabitMQ;
 
 namespace RabbitMQMvc.Controllers
 {
@@ -22,19 +25,21 @@ namespace RabbitMQMvc.Controllers
             GetMessageList();
         }
         static List<string> Messagelist = new List<string>();
+        
         [HttpGet]
 
         public IActionResult CreateMessage()
         {
-            return View(new MessageModel() { MessageList= Messagelist});
+            var userName = HttpContext.Session.GetString("UserName");
+            return View(new MessageModel() { MessageList= Messagelist,CurrentUser=userName});
         }
         [HttpPost]
-        public IActionResult CreateMessage(string Data) {
+        public JsonResult CreateMessage(string Data) {
             var userName = HttpContext.Session.GetString("UserName");
             var message = new Message() { Data= Data ,UserName= userName };
             var messageEntity = _messageService.CreateMessage(message);
             _rabitMQProducer.SendMessage(messageEntity);
-            return View(new MessageModel() { MessageList = Messagelist,Data=Data});
+            return Json(new MessageModel() { MessageList = Messagelist,Data=Data,CurrentUser=userName});
         }
 
         public void GetMessageList()
@@ -56,6 +61,12 @@ namespace RabbitMQMvc.Controllers
 
         public IActionResult MessageList() {
             return View(Messagelist);
+        }
+    }
+    public class Chat : Hub
+    {
+        public Task SendMessage(string user,string message) {
+            return Clients.All.SendAsync("ReceiveMessage", user, message);
         }
     }
 }
